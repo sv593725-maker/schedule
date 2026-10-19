@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розклад занять АТ1а</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white py-8 px-4 shadow-lg mb-8">
+        <div class="max-w-7xl mx-auto text-center space-y-3">
+            <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">
+                Група АТ1а
+            </span>
+            <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Поточний розклад</h1>
+            <p class="text-blue-100 text-lg md:text-xl font-medium flex items-center justify-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                20.10.2026 - 16.11.2026
+            </p>
+        </div>
+    </header>
+
+    <!-- Schedule Grid -->
+    <main class="max-w-7xl mx-auto px-4 pb-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 items-start">
+
+            <!-- ПОНЕДІЛОК -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="bg-slate-100 py-3 px-5 border-b border-slate-200">
+                    <h2 class="text-lg font-bold text-slate-800 uppercase text-center">Понеділок</h2>
+                </div>
+                <div class="p-4 space-y-4">
+                    <!-- Пари 1-2 -->
+                    <div class="relative pl-4 border-l-2 border-blue-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded">08:45 - 10:20</span>
+                            <span class="text-xs text-slate-400 font-medium">Пари 1, 2</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Деталі машин</h3>
+                        <p class="text-sm text-slate-600 mb-2">Кулінський В.В.</p>
+                        <a href="https://meet.google.com/hyc-krvp-ndw" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                    <!-- Пари 3-4 -->
+                    <div class="relative pl-4 border-l-2 border-blue-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded">10:25 - 12:00</span>
+                            <span class="text-xs text-slate-400 font-medium">Пари 3, 4</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Вища математ</h3>
+                        <p class="text-sm text-slate-600 mb-2">Гуйда О.І.</p>
+                        <a href="https://meet.google.com/tyu-cogj-pbq" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                    <!-- Пара 5 -->
+                    <div class="relative pl-4 border-l-2 border-amber-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded">12:30 - 13:15</span>
+                            <span class="text-xs text-slate-400 font-medium">Пара 5</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Історія Укр.</h3>
+                        <p class="text-sm text-slate-600 mb-2">Друщенко С.В.</p>
+                        <a href="https://meet.google.com/nqe-wgun-sui" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                    <!-- Пара 6 -->
+                    <div class="relative pl-4 border-l-2 border-green-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded">13:20 - 14:05</span>
+                            <span class="text-xs text-slate-400 font-medium">Пара 6</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Фізкультура</h3>
+                        <p class="text-sm text-slate-600 mb-2">Мацак Т.М.</p>
+                        <a href="https://meet.google.com/ejo-xgcc-mae" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                    <!-- Пара 7 -->
+                    <div class="relative pl-4 border-l-2 border-purple-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded">14:10 - 14:55</span>
+                            <span class="text-xs text-slate-400 font-medium">Пара 7</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Опір матеріалів</h3>
+                        <p class="text-sm text-slate-600 mb-2">Ющенко М.М.</p>
+                        <a href="https://meet.google.com/yqs-erkn-nzn" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ВІВТОРОК -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="bg-slate-100 py-3 px-5 border-b border-slate-200">
+                    <h2 class="text-lg font-bold text-slate-800 uppercase text-center">Вівторок</h2>
+                </div>
+                <div class="p-4 space-y-4">
+                    <!-- Пари 1-2 -->
+                    <div class="relative pl-4 border-l-2 border-rose-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-rose-700 bg-rose-50 px-2 py-0.5 rounded">08:45 - 10:20</span>
+                            <span class="text-xs text-slate-400 font-medium">Пари 1, 2</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Соціологія</h3>
+                        <p class="text-sm text-slate-600 mb-2">Мороз І.М.</p>
+                        <a href="https://meet.google.com/kha-nhxh-zbo" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                    <!-- Пари 3-4 -->
+                    <div class="relative pl-4 border-l-2 border-teal-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded">10:25 - 12:00</span>
+                            <span class="text-xs text-slate-400 font-medium">Пари 3, 4</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Осн.нац.спрот.</h3>
+                        <p class="text-sm text-slate-600 mb-2">Воронов С.М.</p>
+                        <a href="https://meet.google.com/ifr-ausj-xtq" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                    <!-- Пари 5-6 -->
+                    <div class="relative pl-4 border-l-2 border-amber-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded">12:30 - 14:05</span>
+                            <span class="text-xs text-slate-400 font-medium">Пари 5, 6</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Історія Укр.</h3>
+                        <p class="text-sm text-slate-600 mb-2">Друщенко С.В.</p>
+                        <a href="https://meet.google.com/nqe-wgun-sui" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                    <!-- Пара 7 -->
+                    <div class="relative pl-4 border-l-2 border-blue-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded">14:10 - 14:55</span>
+                            <span class="text-xs text-slate-400 font-medium">Пара 7</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Деталі машин</h3>
+                        <p class="text-sm text-slate-600 mb-2">Кулінський В.В.</p>
+                        <a href="https://meet.google.com/hyc-krvp-ndw" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- СЕРЕДА -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="bg-slate-100 py-3 px-5 border-b border-slate-200">
+                    <h2 class="text-lg font-bold text-slate-800 uppercase text-center">Середа</h2>
+                </div>
+                <div class="p-4 space-y-4">
+                    <!-- Пара 1 -->
+                    <div class="relative pl-4 border-l-2 border-blue-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded">08:45 - 09:30</span>
+                            <span class="text-xs text-slate-400 font-medium">Пара 1</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Вища математ</h3>
+                        <p class="text-sm text-slate-600 mb-2">Гуйда О.І.</p>
+                        <a href="https://meet.google.com/tyu-cogj-pbq" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                    <!-- Пара 2 -->
+                    <div class="relative pl-4 border-l-2 border-indigo-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded">09:35 - 10:20</span>
+                            <span class="text-xs text-slate-400 font-medium">Пара 2</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Укр. мова</h3>
+                        <p class="text-sm text-slate-600 mb-2">Лук’яненко В.В.</p>
+                        <a href="https://meet.google.com/abb-zisk-uew" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                    <!-- Пари 3-4 -->
+                    <div class="relative pl-4 border-l-2 border-purple-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded">10:25 - 12:00</span>
+                            <span class="text-xs text-slate-400 font-medium">Пари 3, 4</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Опір матеріал.</h3>
+                        <p class="text-sm text-slate-600 mb-2">Ющенко М.М.</p>
+                        <a href="https://meet.google.com/yqs-erkn-nzn" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                    <!-- Пара 5 -->
+                    <div class="relative pl-4 border-l-2 border-teal-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-teal-700 bg-teal-50 px-2 py-0.5 rounded">12:30 - 13:15</span>
+                            <span class="text-xs text-slate-400 font-medium">Пара 5</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Осн.нац.спрот.</h3>
+                        <p class="text-sm text-slate-600 mb-2">Воронов С.М.</p>
+                        <a href="https://meet.google.com/ifr-ausj-xtq" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ЧЕТВЕР -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="bg-slate-100 py-3 px-5 border-b border-slate-200">
+                    <h2 class="text-lg font-bold text-slate-800 uppercase text-center">Четвер</h2>
+                </div>
+                <div class="p-4 space-y-4">
+                    <!-- Пари 1-2 -->
+                    <div class="relative pl-4 border-l-2 border-indigo-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded">08:45 - 10:20</span>
+                            <span class="text-xs text-slate-400 font-medium">Пари 1, 2</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Укр. мова</h3>
+                        <p class="text-sm text-slate-600 mb-2">Лук’яненко В.В.</p>
+                        <a href="https://meet.google.com/abb-zisk-uew" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                    <!-- Пари 3-4 -->
+                    <div class="relative pl-4 border-l-2 border-fuchsia-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-fuchsia-700 bg-fuchsia-50 px-2 py-0.5 rounded">10:25 - 12:00</span>
+                            <span class="text-xs text-slate-400 font-medium">Пари 3, 4</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Інжен.графіка</h3>
+                        <p class="text-sm text-slate-600 mb-2">Клименко А.А.</p>
+                        <a href="https://meet.google.com/utx-axwd-oze" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                    <!-- Пари 5-6 -->
+                    <div class="relative pl-4 border-l-2 border-pink-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-pink-700 bg-pink-50 px-2 py-0.5 rounded">12:30 - 14:05</span>
+                            <span class="text-xs text-slate-400 font-medium">Пари 5, 6</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Англ.мова</h3>
+                        <p class="text-sm text-slate-600 mb-2">Копитко С.П.</p>
+                        <a href="https://us05web.zoom.us/j/2634600068?pwd=Qy9Ra2VKZ3g4aXRNYTBINHBGazB1dz09&omn=84675441312" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Відкрити Zoom
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- П'ЯТНИЦЯ -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="bg-slate-100 py-3 px-5 border-b border-slate-200">
+                    <h2 class="text-lg font-bold text-slate-800 uppercase text-center">П'ятниця</h2>
+                </div>
+                <div class="p-4 space-y-4">
+                    <!-- Пара 1 -->
+                    <div class="relative pl-4 border-l-2 border-rose-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-rose-700 bg-rose-50 px-2 py-0.5 rounded">08:45 - 09:30</span>
+                            <span class="text-xs text-slate-400 font-medium">Пара 1</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Соціологія</h3>
+                        <p class="text-sm text-slate-600 mb-2">Мороз І.М.</p>
+                        <a href="https://meet.google.com/kha-nhxh-zbo" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                    <!-- Пара 2 -->
+                    <div class="relative pl-4 border-l-2 border-fuchsia-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-fuchsia-700 bg-fuchsia-50 px-2 py-0.5 rounded">09:35 - 10:20</span>
+                            <span class="text-xs text-slate-400 font-medium">Пара 2</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Інжен.графіка</h3>
+                        <p class="text-sm text-slate-600 mb-2">Клименко А.А.</p>
+                        <a href="https://meet.google.com/utx-axwd-oze" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                    <!-- Пара 3 -->
+                    <div class="relative pl-4 border-l-2 border-purple-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded">10:25 - 11:10</span>
+                            <span class="text-xs text-slate-400 font-medium">Пара 3</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Опір матеріал.</h3>
+                        <p class="text-sm text-slate-600 mb-2">Ющенко М.М.</p>
+                        <a href="https://meet.google.com/yqs-erkn-nzn" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                    <!-- Пара 4 -->
+                    <div class="relative pl-4 border-l-2 border-green-500">
+                        <div class="flex justify-between items-start mb-1">
+                            <span class="text-xs font-bold text-green-700 bg-green-50 px-2 py-0.5 rounded">11:15 - 12:00</span>
+                            <span class="text-xs text-slate-400 font-medium">Пара 4</span>
+                        </div>
+                        <h3 class="font-bold text-base text-slate-900">Фізкультура</h3>
+                        <p class="text-sm text-slate-600 mb-2">Мацак Т.М.</p>
+                        <a href="https://meet.google.com/ejo-xgcc-mae" target="_blank" class="block text-center text-sm text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-xl transition-colors font-medium">
+                            Приєднатися
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="text-center text-slate-500 text-sm py-6 border-t border-slate-200">
+        <p>© 2026 Навчальний розклад</p>
+    </footer>
+
+</body>
+</html>
